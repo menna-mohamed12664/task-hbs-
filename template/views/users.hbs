@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>users</title>
+</head>
+<body>
+  <header>{{>header}}</header>
+
+  <div class="parent">
+    <h2 style="text-align:center; margin-top:30px;">{{logo}}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>العمر</th>
+          <th>محل الإقامة</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each arr}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{age}}</td>
+          <td>{{city}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <footer>{{> footer}}</footer>
+</body>
+</html>

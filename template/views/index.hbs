@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>{{> header}}</header>
+    <h2 class="page-title">welcom...</h2>
+    <h2>
+      this page is: 
+      {{#if title}}
+        {{title}}
+      {{else}}
+        <p>not found</p>
+      {{/if}}.
+    </h2>
+    <h2>
+      desc: 
+      {{#if desc}}
+        {{desc}}
+      {{else}}
+        <p>not found</p>
+      {{/if}}.
+    </h2>
+    <footer>{{> footer}}</footer>
+  </body>
+</html>
